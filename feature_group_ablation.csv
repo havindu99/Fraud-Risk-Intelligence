@@ -1,0 +1,49 @@
+model,setting,pr_auc,roc_auc,d_pr_vs_raw,d_roc_vs_raw
+LogReg,raw features only,0.247,0.6693,0.0,0.0
+LogReg,ALL 11 groups,0.2581,0.684,0.0111,0.0147
+LogReg,add only: transform,0.2394,0.6687,-0.0076,-0.0006
+LogReg,drop: transform,0.2587,0.6842,0.0117,0.0149
+LogReg,add only: velocity,0.2447,0.6669,-0.0023,-0.0025
+LogReg,drop: velocity,0.2597,0.6856,0.0127,0.0163
+LogReg,add only: amount_norm,0.248,0.6804,0.001,0.0111
+LogReg,drop: amount_norm,0.2506,0.6742,0.0036,0.0049
+LogReg,add only: risk,0.2444,0.6665,-0.0026,-0.0029
+LogReg,drop: risk,0.2558,0.6848,0.0088,0.0155
+LogReg,add only: time,0.2475,0.6711,0.0005,0.0018
+LogReg,drop: time,0.2549,0.6786,0.0079,0.0093
+LogReg,add only: behaviour,0.2383,0.6661,-0.0087,-0.0032
+LogReg,drop: behaviour,0.2602,0.6862,0.0132,0.0169
+LogReg,add only: interaction,0.2432,0.6645,-0.0038,-0.0048
+LogReg,drop: interaction,0.26,0.6859,0.013,0.0166
+LogReg,add only: flags,0.2459,0.6616,-0.0011,-0.0077
+LogReg,drop: flags,0.2584,0.6832,0.0114,0.0139
+LogReg,add only: missing,0.2597,0.6728,0.0127,0.0034
+LogReg,drop: missing,0.2563,0.6793,0.0093,0.0099
+LogReg,add only: binning,0.2368,0.6654,-0.0102,-0.0039
+LogReg,drop: binning,0.2588,0.6834,0.0118,0.0141
+LogReg,add only: encoding,0.2436,0.6673,-0.0034,-0.0021
+LogReg,drop: encoding,0.2607,0.6819,0.0137,0.0126
+GBM (LightGBM),raw features only,0.2258,0.648,0.0,0.0
+GBM (LightGBM),ALL 11 groups,0.2538,0.657,0.028,0.009
+GBM (LightGBM),add only: transform,0.2258,0.648,0.0,0.0
+GBM (LightGBM),drop: transform,0.2538,0.657,0.028,0.009
+GBM (LightGBM),add only: velocity,0.2446,0.6617,0.0188,0.0137
+GBM (LightGBM),drop: velocity,0.2423,0.6537,0.0164,0.0057
+GBM (LightGBM),add only: amount_norm,0.226,0.6472,0.0002,-0.0009
+GBM (LightGBM),drop: amount_norm,0.2566,0.6572,0.0308,0.0091
+GBM (LightGBM),add only: risk,0.2303,0.6449,0.0045,-0.0031
+GBM (LightGBM),drop: risk,0.2271,0.6547,0.0013,0.0067
+GBM (LightGBM),add only: time,0.234,0.6476,0.0081,-0.0005
+GBM (LightGBM),drop: time,0.2419,0.6548,0.0161,0.0068
+GBM (LightGBM),add only: behaviour,0.2321,0.6541,0.0063,0.0061
+GBM (LightGBM),drop: behaviour,0.2465,0.6547,0.0207,0.0067
+GBM (LightGBM),add only: interaction,0.2284,0.6452,0.0026,-0.0028
+GBM (LightGBM),drop: interaction,0.2566,0.6629,0.0307,0.0149
+GBM (LightGBM),add only: flags,0.2258,0.648,0.0,0.0
+GBM (LightGBM),drop: flags,0.2538,0.657,0.028,0.009
+GBM (LightGBM),add only: missing,0.2315,0.6482,0.0057,0.0002
+GBM (LightGBM),drop: missing,0.2522,0.6576,0.0264,0.0095
+GBM (LightGBM),add only: binning,0.2258,0.648,0.0,0.0
+GBM (LightGBM),drop: binning,0.2534,0.6575,0.0276,0.0094
+GBM (LightGBM),add only: encoding,0.2291,0.6615,0.0032,0.0135
+GBM (LightGBM),drop: encoding,0.2462,0.6465,0.0204,-0.0016

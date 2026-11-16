@@ -1,0 +1,16 @@
+case,transaction_id,p_cal,reason_code,value,shap
+A: highest-risk TRUE fraud,TXN5002316,0.348,chargeback_x_new_device,1.0,0.0564
+A: highest-risk TRUE fraud,TXN5002316,0.348,new_device_inconsistent,1.0,0.0304
+A: highest-risk TRUE fraud,TXN5002316,0.348,new_device,1.0,0.0221
+B: highest-risk LEGIT (false positive),TXN5002322,0.47,auth_missing,1.0,0.037
+B: highest-risk LEGIT (false positive),TXN5002322,0.47,new_device_inconsistent,1.0,0.0367
+B: highest-risk LEGIT (false positive),TXN5002322,0.47,authentication_level_Missing,1.0,0.0334
+C: fraud caught in REVIEW band (median score),TXN5002509,0.18,high_amount_p95,1.0,0.0262
+C: fraud caught in REVIEW band (median score),TXN5002509,0.18,high_amount_p90,1.0,0.0146
+C: fraud caught in REVIEW band (median score),TXN5002509,0.18,merchant_category_Jewelry,1.0,0.0092
+D: missed fraud (lowest score),TXN5002140,0.065,channel_POS,0.0,0.0016
+D: missed fraud (lowest score),TXN5002140,0.065,channel_E-commerce,1.0,0.0015
+D: missed fraud (lowest score),TXN5002140,0.065,far_x_high_amount,1.0,0.001
+E: typical legit approved (median score),TXN5001868,0.097,customer_tier_Basic,1.0,0.0047
+E: typical legit approved (median score),TXN5001868,0.097,combo_tier_channel,0.186,0.0043
+E: typical legit approved (median score),TXN5001868,0.097,merchant_risk_bin,4.0,0.0036

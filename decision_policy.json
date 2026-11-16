@@ -1,0 +1,49 @@
+{
+  "model": "ExtraTrees",
+  "calibration": "platt",
+  "seed": 42,
+  "thresholds": {
+    "review": 0.14,
+    "block": 0.35
+  },
+  "actions": {
+    "0": "Approve",
+    "1": "Review",
+    "2": "Block"
+  },
+  "cost_params": {
+    "fn_fee": 15.0,
+    "fp_block_fixed": 40.0,
+    "fp_block_margin": 0.02,
+    "review_cost": 20.0,
+    "review_friction": 3.0,
+    "analyst_recall": 0.9
+  },
+  "amount_fill_for_cost": 90.32,
+  "fit_data": "development set only (80% stratified split); test set untouched by fitting",
+  "features_raw": [
+    "hour",
+    "day_of_week",
+    "transaction_amount",
+    "distance_from_usual_location_km",
+    "transactions_last_1h",
+    "transactions_last_24h",
+    "account_age_days",
+    "failed_logins_24h",
+    "prior_chargebacks",
+    "device_age_days",
+    "merchant_risk_score",
+    "ip_risk_score",
+    "email_age_days",
+    "login_to_transaction_minutes",
+    "new_device",
+    "billing_address_mismatch",
+    "card_presence",
+    "channel",
+    "country",
+    "device_type",
+    "merchant_category",
+    "authentication_level",
+    "customer_tier"
+  ]
+}
