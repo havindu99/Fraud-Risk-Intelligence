@@ -13,7 +13,7 @@ Calibrated fraud probability + Approve / Review / Block decision + SHAP reason c
 | `04_calibrated_model.joblib` | `CalibratedClassifierCV` (Platt) around the pipeline: production candidate |
 | `05_threshold_cost_analysis.csv` | Long-format tables (column `table`): threshold curves, cost-scenario sensitivity, threshold grid, model x scenario costs, policy comparison |
 | `06_model_card.pdf` | Model governance document (3 pages) |
-| `07_business_fraud_strategy.pdf` | Management and technical report (38 pages, no headers or footers) |
+| `07_business_fraud_strategy.pdf` | Management and technical report (about 38 pages, no headers or footers; the brief asked for 8-12 pages, the longer length was requested explicitly by the project owner). A Word copy is `07_business_fraud_strategy.docx` |
 | `08_README.md` | This file |
 | Extras | `fraud_lib.py` (required to load the joblibs), `score_transactions.py` (scoring CLI), `decision_policy.json` (thresholds + costs), `feature_dictionary.csv`, `feature_univariate_evaluation.csv`, `feature_group_ablation.csv`, `permutation_importance_raw_fields.csv`, `local_explanations_reason_codes.csv`, `hpo_log.csv`, `data_quality_report.csv`, `results.json` (every number used in the reports), `figures/` (F01-F33 PNG) |
 
